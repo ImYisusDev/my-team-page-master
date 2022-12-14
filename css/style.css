@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+.tittle {
+  height: 47px;
+  padding-right: 40px;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: #000000;
+}
+
+.subtitle {
+  height: 27px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.work {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  writing-mode: vertical-rl;
+}
+
+body {
+  margin: 0;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 940px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  margin: 2.5rem 0;
+  gap: 2rem;
+}
+.team .person {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  transition: transform 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.team .person:nth-child(even) {
+  margin-top: 3rem;
+}
+.team .person:hover {
+  transform: scale3d(1.1, 1.1, 0.3);
+}
+.team .person figure {
+  margin: 0;
+}
+.team .person figure img {
+  width: 100%;
+}
+.team .person div {
+  width: 18px;
+  height: 200px;
+}
+
+@media (min-width: 755px) {
+  .header {
+    margin: 3rem 0;
+  }
+  .team {
+    grid-template-columns: auto auto auto;
+  }
+  .team .card:nth-child(even) {
+    margin-top: 0;
+  }
+  .team .card:nth-child(2), .team .card:nth-child(5) {
+    margin-top: 3rem;
+  }
+  .text {
+    max-width: 440px;
+  }
+}
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+
+/*# sourceMappingURL=style.css.map */
